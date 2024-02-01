@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library</title>
+</head>
+<body>
+
+    <div class="head">
+        <h1><img src="./logo.jpg" alt="">LibTrack</h1>
+        <button class="show-dialog">Add Book</button>
+    </div>
+
+    <dialog >
+        <div class="container">
+            <button class="close-dialog" autofocus>X</button>
+            <h2>Add Book</h2>
+            <form action="" method="dialog">
+                <label for="title">Title</label>
+                <input id="title" type="text" autocomplete="off" placeholder="Book Title" maxlength="53" required>
+    
+                <label for="author">Author</label>
+                <input id="author" type="text" autocomplete="off" placeholder="Author" maxlength="53" required>
+    
+                <label for="pages">Number of Pages</label>
+                <input id="pages" type="number" autocomplete="off" placeholder="Pages" max="10000" required>
+    
+                <div class="check">
+                    <label for="read">Read The Book?</label>
+                    <input type="checkbox" id="read">
+                </div>
+    
+                <button type="submit" class="submit">Add this Book</button>
+    
+    
+            </form>
+        </div>
+    </dialog>
+
+    
+    <h2 class="sect-title">MyBooks</h2>
+
+    <div class="books-container">
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
